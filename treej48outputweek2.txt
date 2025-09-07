@@ -1,0 +1,192 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     water_potability-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.ReplaceMissingValues
+Instances:    3276
+Attributes:   10
+              ph
+              Hardness
+              Solids
+              Chloramines
+              Sulfate
+              Conductivity
+              Organic_carbon
+              Trihalomethanes
+              Turbidity
+              Potability
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+Sulfate <= 258.9306
+|   Solids <= 21160.08974
+|   |   ph <= 7.946768
+|   |   |   Sulfate <= 224.212503: 1 (5.0/1.0)
+|   |   |   Sulfate > 224.212503
+|   |   |   |   Chloramines <= 4.157902: 1 (3.0/1.0)
+|   |   |   |   Chloramines > 4.157902: 0 (15.0)
+|   |   ph > 7.946768: 1 (5.0)
+|   Solids > 21160.08974
+|   |   ph <= 5.821707
+|   |   |   Conductivity <= 454.555208: 1 (4.0)
+|   |   |   Conductivity > 454.555208: 0 (4.0)
+|   |   ph > 5.821707: 1 (53.0/3.0)
+Sulfate > 258.9306
+|   Sulfate <= 387.686388
+|   |   ph <= 4.633203
+|   |   |   Sulfate <= 326.694018
+|   |   |   |   Chloramines <= 5.26067
+|   |   |   |   |   ph <= 3.691933: 1 (2.0)
+|   |   |   |   |   ph > 3.691933: 0 (3.0)
+|   |   |   |   Chloramines > 5.26067: 0 (53.0)
+|   |   |   Sulfate > 326.694018
+|   |   |   |   Hardness <= 252.404565
+|   |   |   |   |   Chloramines <= 6.467744
+|   |   |   |   |   |   Trihalomethanes <= 72.771017: 1 (12.0/1.0)
+|   |   |   |   |   |   Trihalomethanes > 72.771017: 0 (7.0/1.0)
+|   |   |   |   |   Chloramines > 6.467744: 0 (63.0/10.0)
+|   |   |   |   Hardness > 252.404565: 1 (6.0)
+|   |   ph > 4.633203
+|   |   |   Sulfate <= 294.836218
+|   |   |   |   ph <= 7.273368
+|   |   |   |   |   Chloramines <= 5.726224: 1 (41.0/14.0)
+|   |   |   |   |   Chloramines > 5.726224
+|   |   |   |   |   |   Chloramines <= 8.482421: 0 (102.0/25.0)
+|   |   |   |   |   |   Chloramines > 8.482421
+|   |   |   |   |   |   |   Organic_carbon <= 10.717588: 1 (6.0)
+|   |   |   |   |   |   |   Organic_carbon > 10.717588
+|   |   |   |   |   |   |   |   Solids <= 29860.27578
+|   |   |   |   |   |   |   |   |   Conductivity <= 506.531414: 0 (16.0/2.0)
+|   |   |   |   |   |   |   |   |   Conductivity > 506.531414: 1 (4.0/1.0)
+|   |   |   |   |   |   |   |   Solids > 29860.27578: 1 (9.0/1.0)
+|   |   |   |   ph > 7.273368
+|   |   |   |   |   Chloramines <= 8.840474
+|   |   |   |   |   |   Hardness <= 206.107758
+|   |   |   |   |   |   |   Conductivity <= 436.991752: 1 (24.0)
+|   |   |   |   |   |   |   Conductivity > 436.991752
+|   |   |   |   |   |   |   |   Solids <= 17915.08597: 0 (5.0)
+|   |   |   |   |   |   |   |   Solids > 17915.08597
+|   |   |   |   |   |   |   |   |   Organic_carbon <= 10.821321: 0 (2.0)
+|   |   |   |   |   |   |   |   |   Organic_carbon > 10.821321: 1 (9.0)
+|   |   |   |   |   |   Hardness > 206.107758: 0 (43.0/20.0)
+|   |   |   |   |   Chloramines > 8.840474: 1 (15.0)
+|   |   |   Sulfate > 294.836218
+|   |   |   |   Hardness <= 136.323752
+|   |   |   |   |   Solids <= 11803.7355: 1 (10.0)
+|   |   |   |   |   Solids > 11803.7355
+|   |   |   |   |   |   Hardness <= 100.80652: 1 (9.0)
+|   |   |   |   |   |   Hardness > 100.80652: 0 (52.0/24.0)
+|   |   |   |   Hardness > 136.323752
+|   |   |   |   |   ph <= 8.379513
+|   |   |   |   |   |   Sulfate <= 353.529381: 0 (1653.0/588.0)
+|   |   |   |   |   |   Sulfate > 353.529381
+|   |   |   |   |   |   |   Hardness <= 212.028944: 0 (282.0/108.0)
+|   |   |   |   |   |   |   Hardness > 212.028944
+|   |   |   |   |   |   |   |   Chloramines <= 8.495904: 1 (92.0/23.0)
+|   |   |   |   |   |   |   |   Chloramines > 8.495904
+|   |   |   |   |   |   |   |   |   Solids <= 22916.57224
+|   |   |   |   |   |   |   |   |   |   Conductivity <= 400.155324: 0 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   Conductivity > 400.155324: 1 (6.0/1.0)
+|   |   |   |   |   |   |   |   |   Solids > 22916.57224: 0 (11.0)
+|   |   |   |   |   ph > 8.379513
+|   |   |   |   |   |   Solids <= 30684.21164: 0 (362.0/78.0)
+|   |   |   |   |   |   Solids > 30684.21164
+|   |   |   |   |   |   |   Chloramines <= 4.768781: 0 (6.0)
+|   |   |   |   |   |   |   Chloramines > 4.768781
+|   |   |   |   |   |   |   |   Sulfate <= 353.529381
+|   |   |   |   |   |   |   |   |   Trihalomethanes <= 80.568252
+|   |   |   |   |   |   |   |   |   |   Turbidity <= 2.922195: 0 (4.0)
+|   |   |   |   |   |   |   |   |   |   Turbidity > 2.922195
+|   |   |   |   |   |   |   |   |   |   |   Solids <= 34132.06798
+|   |   |   |   |   |   |   |   |   |   |   |   ph <= 9.014357: 1 (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   ph > 9.014357: 0 (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   Solids > 34132.06798: 1 (14.0)
+|   |   |   |   |   |   |   |   |   Trihalomethanes > 80.568252: 1 (9.0)
+|   |   |   |   |   |   |   |   Sulfate > 353.529381: 0 (4.0)
+|   Sulfate > 387.686388
+|   |   ph <= 7.609521
+|   |   |   Chloramines <= 8.782147
+|   |   |   |   ph <= 7.066142
+|   |   |   |   |   Trihalomethanes <= 86.308236
+|   |   |   |   |   |   Solids <= 26764.49443
+|   |   |   |   |   |   |   Turbidity <= 5.086699: 1 (49.0/4.0)
+|   |   |   |   |   |   |   Turbidity > 5.086699
+|   |   |   |   |   |   |   |   Organic_carbon <= 13.550367: 0 (4.0)
+|   |   |   |   |   |   |   |   Organic_carbon > 13.550367: 1 (2.0)
+|   |   |   |   |   |   Solids > 26764.49443
+|   |   |   |   |   |   |   Chloramines <= 5.696064: 1 (4.0)
+|   |   |   |   |   |   |   Chloramines > 5.696064
+|   |   |   |   |   |   |   |   Turbidity <= 3.996581
+|   |   |   |   |   |   |   |   |   Turbidity <= 3.113764: 0 (2.0)
+|   |   |   |   |   |   |   |   |   Turbidity > 3.113764: 1 (2.0)
+|   |   |   |   |   |   |   |   Turbidity > 3.996581: 0 (6.0)
+|   |   |   |   |   Trihalomethanes > 86.308236: 0 (6.0)
+|   |   |   |   ph > 7.066142
+|   |   |   |   |   ph <= 7.372612
+|   |   |   |   |   |   Chloramines <= 7.70499: 0 (24.0/2.0)
+|   |   |   |   |   |   Chloramines > 7.70499
+|   |   |   |   |   |   |   Turbidity <= 3.775015: 1 (6.0)
+|   |   |   |   |   |   |   Turbidity > 3.775015
+|   |   |   |   |   |   |   |   Organic_carbon <= 16.501578: 0 (5.0)
+|   |   |   |   |   |   |   |   Organic_carbon > 16.501578: 1 (4.0/1.0)
+|   |   |   |   |   ph > 7.372612: 1 (6.0/1.0)
+|   |   |   Chloramines > 8.782147
+|   |   |   |   Trihalomethanes <= 77.042318: 1 (31.0)
+|   |   |   |   Trihalomethanes > 77.042318
+|   |   |   |   |   Solids <= 15494.35984: 1 (5.0)
+|   |   |   |   |   Solids > 15494.35984: 0 (3.0)
+|   |   ph > 7.609521
+|   |   |   Chloramines <= 9.458128
+|   |   |   |   Hardness <= 172.383878: 0 (23.0)
+|   |   |   |   Hardness > 172.383878
+|   |   |   |   |   Turbidity <= 3.94546
+|   |   |   |   |   |   Sulfate <= 409.380908: 0 (19.0)
+|   |   |   |   |   |   Sulfate > 409.380908
+|   |   |   |   |   |   |   Chloramines <= 7.412765: 1 (2.0)
+|   |   |   |   |   |   |   Chloramines > 7.412765: 0 (3.0)
+|   |   |   |   |   Turbidity > 3.94546
+|   |   |   |   |   |   Sulfate <= 394.305876: 1 (4.0)
+|   |   |   |   |   |   Sulfate > 394.305876
+|   |   |   |   |   |   |   Turbidity <= 4.220028
+|   |   |   |   |   |   |   |   Trihalomethanes <= 85.241873: 1 (4.0)
+|   |   |   |   |   |   |   |   Trihalomethanes > 85.241873: 0 (2.0)
+|   |   |   |   |   |   |   Turbidity > 4.220028: 0 (8.0)
+|   |   |   Chloramines > 9.458128
+|   |   |   |   Hardness <= 198.768195: 1 (5.0)
+|   |   |   |   Hardness > 198.768195: 0 (3.0/1.0)
+
+Number of Leaves  : 	69
+
+Size of the tree : 	137
+
+
+Time taken to build model: 0.16 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2074               63.3089 %
+Incorrectly Classified Instances      1202               36.6911 %
+Kappa statistic                          0.1146
+Mean absolute error                      0.4443
+Root mean squared error                  0.4901
+Relative absolute error                 93.3599 %
+Root relative squared error            100.4812 %
+Total Number of Instances             3276     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.928    0.829    0.637      0.928    0.755      0.155    0.565     0.652     0
+                 0.171    0.072    0.605      0.171    0.267      0.155    0.565     0.471     1
+Weighted Avg.    0.633    0.533    0.624      0.633    0.565      0.155    0.565     0.581     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1855  143 |    a = 0
+ 1059  219 |    b = 1
+

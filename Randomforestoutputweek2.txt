@@ -1,0 +1,53 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     water_potability-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.ReplaceMissingValues
+Instances:    3276
+Attributes:   10
+              ph
+              Hardness
+              Solids
+              Chloramines
+              Sulfate
+              Conductivity
+              Organic_carbon
+              Trihalomethanes
+              Turbidity
+              Potability
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 2.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        2206               67.3382 %
+Incorrectly Classified Instances      1070               32.6618 %
+Kappa statistic                          0.2511
+Mean absolute error                      0.4256
+Root mean squared error                  0.4601
+Relative absolute error                 89.4413 %
+Root relative squared error             94.3347 %
+Total Number of Instances             3276     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.880    0.650    0.679      0.880    0.767      0.276    0.682     0.754     0
+                 0.350    0.120    0.652      0.350    0.455      0.276    0.682     0.598     1
+Weighted Avg.    0.673    0.443    0.668      0.673    0.645      0.276    0.682     0.693     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1759  239 |    a = 0
+  831  447 |    b = 1
+

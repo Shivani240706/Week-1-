@@ -1,0 +1,79 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     water_potability-weka.filters.unsupervised.attribute.NumericToNominal-Rlast-weka.filters.unsupervised.attribute.ReplaceMissingValues
+Instances:    3276
+Attributes:   10
+              ph
+              Hardness
+              Solids
+              Chloramines
+              Sulfate
+              Conductivity
+              Organic_carbon
+              Trihalomethanes
+              Turbidity
+              Potability
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                     Class
+Variable                 0
+==========================
+ph                 -0.0039
+Hardness            0.0008
+Solids                  -0
+Chloramines        -0.0331
+Sulfate             0.0009
+Conductivity        0.0002
+Organic_carbon      0.0183
+Trihalomethanes    -0.0008
+Turbidity          -0.0001
+Intercept           0.1044
+
+
+Odds Ratios...
+                     Class
+Variable                 0
+==========================
+ph                  0.9961
+Hardness            1.0008
+Solids                   1
+Chloramines         0.9674
+Sulfate             1.0009
+Conductivity        1.0002
+Organic_carbon      1.0184
+Trihalomethanes     0.9992
+Turbidity           0.9999
+
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        1997               60.9585 %
+Incorrectly Classified Instances      1279               39.0415 %
+Kappa statistic                         -0.0003
+Mean absolute error                      0.4756
+Root mean squared error                  0.4885
+Relative absolute error                 99.9517 %
+Root relative squared error            100.1384 %
+Total Number of Instances             3276     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.999    0.999    0.610      0.999    0.757      -0.004   0.499     0.595     0
+                 0.001    0.001    0.333      0.001    0.002      -0.004   0.499     0.413     1
+Weighted Avg.    0.610    0.610    0.502      0.610    0.463      -0.004   0.499     0.524     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 1996    2 |    a = 0
+ 1277    1 |    b = 1
+
